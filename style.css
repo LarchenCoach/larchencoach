@@ -1,0 +1,118 @@
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    background-color: white;
+    color: black;
+    padding: 0; margin: 0;
+    font-size: 22px;
+    line-height: 150%;
+    background: rgb(82,30,20);
+    background: linear-gradient(0deg, rgba(82,30,20,1) 0%, rgba(235,168,126,1) 100%) repeat fixed center / cover;     
+}
+
+h1, h2 { margin: 0;     }
+
+a  {   color: #401410;}
+a:hover {   color: #BF4136;}
+a:active {   color: #732817; }
+
+
+.bg {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.flex {    
+    display: flex;
+} 
+
+#language {
+    margin: 0;   padding: 0;
+    justify-content: flex-end;     
+}
+#language > div {
+    height: 36px;
+    justify-content: flex-end; 
+    width: 185px;
+    font-size: 14px;
+    padding-right: 25px;
+    text-align: right;
+    background: rgba(82,30,20,1);
+    border-bottom-left-radius: 40px;
+}
+
+#language a {
+    color: rgb(243, 187, 152);
+    text-decoration: none;
+}
+#language a:hover {
+    color: white;
+}
+#language a:active {
+    color: rgba(82,30,20,1)
+}
+
+
+#header {
+    margin-top: -10px;    
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* */
+
+#about {
+    margin-top: 22px;
+    margin-bottom: 28px;
+}
+.column_text {
+    justify-content: center;
+}
+.maintext{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 25px 25px;
+}
+.maintext_comment p {
+    padding: 6px 0;
+    line-height: 26px;
+    margin: 0;
+    margin-right: 20px;
+}
+.column_photo {
+    width: 458px;
+    height: 538px;          
+    justify-content: center;
+}
+
+/* */
+
+.container2 {    
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+} 
+#contacts {
+    background: rgba(209, 255, 195, 0.6);
+    width: 518px;
+    justify-content: center;   
+    padding-bottom: 5px; 
+}        
+#pricing {
+    justify-content: center;    
+    margin-right: 30px;  
+}
+.price{
+    margin: 25px 25px;
+}
+
+/* */
+
+#projects {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
