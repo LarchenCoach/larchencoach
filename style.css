@@ -10,7 +10,7 @@ body {
     background: linear-gradient(0deg, rgba(82,30,20,1) 0%, rgba(235,168,126,1) 100%) repeat fixed center / cover;     
 }
 
-h1, h2 { margin: 0;     }
+h1, h2 { margin: 0; }
 
 a  {   color: #401410;}
 a:hover {   color: #BF4136;}
