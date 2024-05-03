@@ -1,0 +1,134 @@
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    background-color: white;
+    color: black;
+    padding: 0; margin: 0;
+    font-size: 22px;
+    line-height: 150%;
+    background: #FFFEF1;
+    /* background: linear-gradient(0deg, rgb(124, 56, 25) 0%, rgba(235,168,126,1) 100%) repeat fixed center / cover;      */
+}
+
+h1, h2 { margin: 0; }
+
+a  {   color: #401410;}
+a:hover {   color: #BF4136;}
+a:active {   color: #732817; }
+
+.bg {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.flex {    
+    display: block; /* Изменено с flex на block для одноколоночного макета */
+} 
+
+#language {
+    margin: 0;   padding: 0;
+    text-align: right; /* Изменено с justify-content на text-align для одноколоночного макета */     
+}
+#language > div {
+    height: 36px;
+    text-align: right; /* Изменено с justify-content на text-align для одноколоночного макета */
+    width: 100%; /* Изменено с 185px на 100% для одноколоночного макета */
+    font-size: 14px;
+    padding-right: 25px;
+    background: rgba(82,30,20,1);
+    border-bottom-left-radius: 40px;
+}
+
+#language a {
+    color: rgb(243, 187, 152);
+    text-decoration: none;
+}
+#language a:hover {
+    color: white;
+}
+#language a:active {
+    color: rgba(82,30,20,1)
+}
+
+.lang_fix{
+    margin-top: -10px;    
+}
+#header {
+    margin-top: 15px;
+    padding: 25px 0;
+    text-align: center;
+}
+
+
+/* */
+
+#about {
+    margin-top: 22px;
+    margin-bottom: 28px;
+}
+.column_text {
+    text-align: center; /* Изменено с justify-content на text-align для одноколоночного макета */
+}
+.maintext{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 25px 25px;
+}
+.maintext_comment p {
+    padding: 6px 0;
+    line-height: 26px;
+    margin: 0;
+    margin-right: 20px;
+}
+.maintext_narrow {
+    margin-right: 35px;
+}
+.column_photo {
+    width: 100%; /* Изменено с 458px на 100% для одноколоночного макета */
+    height: auto; /* Изменено с 538px на auto для одноколоночного макета */          
+    text-align: center; /* Изменено с justify-content на text-align для одноколоночного макета */
+}
+.column_photo_tall img { border-radius: 4px; }
+.column_photo_tall {
+    width: 100%; /* Изменено с 490px на 100% для одноколоночного макета */
+    height: auto; /* Изменено с 922px на auto для одноколоночного макета */     
+    text-align: center; /* Изменено с justify-content на text-align для одноколоночного макета */     
+}
+
+/* */
+
+.container2 {    
+    display: block; /* Изменено с flex на block для одноколоночного макета */
+    max-width: 1100px;
+    margin: 0 auto;
+} 
+#contacts {
+    background: rgba(209, 255, 195, 0.6);
+    width: 100%; /* Изменено с 518px на 100% для одноколоночного макета */
+    text-align: center; /* Изменено с justify-content на text-align для одноколоночного макета */   
+    padding-bottom: 5px; 
+    line-height: 26px;
+}        
+#contacts p {
+    font-size: 120%;
+    line-height: 30px;
+}  
+#pricing {
+    text-align: center; /* Изменено с justify-content на text-align для одноколоночного макета */    
+    margin-right: 0; /* Изменено с 30px на 0 для одноколоночного макета */  
+    line-height: 26px;
+}
+.price{
+    margin: 25px 25px;
+}
+
+/* */
+
+#projects {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+

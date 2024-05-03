@@ -18,6 +18,7 @@ a:active {   color: #732817; }
 
 .bg {
     background: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(182, 135, 113, 0.3);
     border-radius: 4px;
     max-width: 1100px;
     margin: 0 auto;
@@ -109,10 +110,18 @@ a:active {   color: #732817; }
 #contacts {
     background: rgba(209, 255, 195, 0.6);
     width: 518px;
+    font-size: 110%;
     justify-content: center;   
     padding-bottom: 5px; 
     line-height: 26px;
 }        
+#contacts p {
+    font-size: 110%;
+    line-height: 30px;
+}       
+.mark{
+    background-color:  rgba(229, 255, 195, 0.6);
+} 
 #pricing {
     justify-content: center;    
     margin-right: 30px;  
