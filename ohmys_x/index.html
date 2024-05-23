@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Stories Style Cards</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        
+        body {
+            background-color: #FFFEF1;
+            margin: 0; padding: 0;
+            font-family: "Nunito", sans-serif;
+            font-size: large;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 20px;
+            width: 3333px;
+        }
+        
+        .align-left {
+            text-align: left;
+        }        
+        
+
+        .card {
+            height: 860px; 
+            width: 450px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid rgba(182, 135, 113, 0.3);    
+            margin: 20px 10px;
+            padding: 30px;
+            overflow: hidden;
+        }
+        .card:hover {
+            box-shadow: 0 0 30px rgba(80, 162, 255, 0.3);
+        }        
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .card h2, .card p {
+            margin: 0;
+        }
+        .card h2{
+            font-size: 40px;
+        }
+        .card p {
+            margin-top: 10px;
+            font-family: 'Dancing Script', cursive;
+        }
+        .card1 {
+            background-image: url('card1.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+        }        
+        .card2 {
+            background-color: #00FF00; /* Зеленый фон для карточки 2 */
+        }
+        .card3 {
+            background-image: url('card3.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            color: white;
+        }        
+        .card4 {
+            background-image: url('card4.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+        }        
+        .card5 {
+            background-color: #242424; 
+            color: white;
+        }
+        .card6 {
+            background-image: url('card6.jpg'); 
+            background-color: rgba(233, 65, 255, 0.719); 
+            background-size: cover; 
+            background-position: center;             
+        }
+
+        .list-container ul {
+            list-style: none;
+            padding: 0;
+        }
+        .list-container li {
+            background-color:  rgba(0,0,0,0.6);
+            font-size:24px;
+            line-height: 1.5;
+            margin: 10px 0;
+            padding: 0 8px;
+            border-radius: 5px;
+        }        
+
+
+        .white-bg{
+            background-color:  rgba(255,255,255,0.8);
+            padding: 0 8px;
+            border-radius: 5px;
+        }
+        .black-bg{
+            background-color:  rgba(0, 0, 0, 0.7);
+            padding: 0 8px;
+            border-radius: 5px;
+        }
+
+        .ultragreen {
+            color: #00FF00;
+        }
+
+
+
+    </style>
+
+    <script>
+        function openCard(card) {
+            var i;
+            var x = document.getElementsByClassName("card");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(card).style.display = "block";
+        }
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            document.onwheel = function(e) {
+                e.preventDefault();
+            };
+
+            document.onwheel = function(e) {
+                e.preventDefault(); 
+                const scrollAmount = e.deltaY * -1;
+                window.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            };
+        });        
+    </script>    
+</head>
+<body>
+    <div class="card-container">
+        <div class="card card1">
+            <div class="card-content">
+                <p class="white-bg"  style="margin-top: 120px;margin-bottom: 15px;">Кипр, Лимасол</p>     
+                <h2  class="black-bg ultragreen">Oh (my) sæx!</h2>
+                <p class="white-bg"  style="font-size: 24px;">Чувственный писательский обед</p>
+                <br/>
+                <p class="white-bg" >только для девушек и женщин</p>
+                <p class="white-bg"  style="font-size: 30px">Тренинг внимательности и осознанности по отношению к своей собственной оргазмический природе</p>
+                <p  class="white-bg" style="font-size: 26px;  margin-top: 25px;">Вкусная экспериментальная арт терапевтическая лаборатория</p>
+                           
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="card-content">
+                <h2>Чего ожидать</h2>
+                <p style="font-size: 26px;  padding-top: 55px;">увлекательная писательская практика-погружение и затем дискуссионный терапевтический клуб на английском</p>
+                <p style="font-size: 26px;  padding-top: 50px;">это цикл писательских встреч по завершению которого мы напишем книгу пикантных историй на потоковом и смелом very good английском!</p>
+                <p style="font-size: 22px;  padding-top: 80px;">будь уверена, лаборатория на то и рассчитана, чтобы ты осмелилась пробовать новое, ошибаться, вставать и продолжать</p>
+            </div>
+        </div>
+        <div class="card card3">
+            <div class="card-content">
+                <h2>Что получишь</h2>
+                <div class="list-container align-left">
+                    <ul>
+                        <li>1. Вкусную еду и сочные темы
+                            для размышления</li>
+                        <li>2. Новую компанию интересных глубоких девушек и женщин</li>
+                        <li>3. Незабываемые впечатления и новые озарения</li>
+                        <br/>
+                        <li>4. Нарративные техники письма для исцеления души</li>
+                        <li>5. Инициацию в состояние единения внутренних контрастов и противоречий</li>
+                        <br/>
+                        <li>6. Ёмкую поддержку тебя в твоей практике английского</li>
+                        <li>7. Упражнения которые помогут усваивать новые формы и расширять словарный запас твоего вкусного английского</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card card4">
+            <div class="card-content">
+                <div class="align-left">
+                    <p class="white-bg" style="font-size: 20px;  margin-top: 35px; margin-bottom: 35px;">пишем истории через которые проживаешь честность и соединяешь смыслы</p>                    
+                </div>
+                <h2  class="white-bg" >Реальное реалити</h2>
+                <div class="align-left">
+                    <p class="white-bg" style="font-size: 26px;  margin-top: 5px; ">рассматриваем изнутри свои разные архетипы и природные потребности, скрытые фантазии и табу</p>
+                    <p class="white-bg" style="font-size: 20px;  margin-top: 35px;">лакомимся оргазмическими тортиками</p>
+                    <p class="white-bg" style="font-size: 22px;  margin-top: 5px;">искушаем друг друга зачитать вслух свои результаты практики чувственного письма</p>
+                    <p class="white-bg" style="font-size: 20px;  margin-top: 5px;">слушаем, не краснея!</p>
+                    <p class="white-bg" style="font-size: 22px;  margin-top: 35px;">будет интересно, целительно и мощно</p>
+                    <p class="white-bg" style="font-size: 30px;  margin-top: 5px;">каждая получит то, на что осмелится и решится</p>
+                </div>
+            </div>
+        </div>
+        <div class="card card5">
+            <div class="card-content">
+                <p style="padding-top: 200px;">Кипр, Лимасол</p>
+                <h2>Веган кухня <a style="color: white;"  href="https://www.instagram.com/fresha.cy/" target="_blank">@fresha.cy</a></h2>
+                <p>Кажду вторую субботу</p>
+                <p>14:00 - 17:30</p>
+                <p style="font-size: 24px;  padding-top: 55px;">еда 25€ <br/>лаборатория 50€</p>
+            </div>
+        </div>                
+        <div class="card card6">
+            <div class="card-content">
+                <p style="font-size: 20px;  padding-top: 100px; padding-bottom: 100px;">ожидаются 10-12 девушек, готовых к погружению в собственные сæкс-смыслы</p>
+                <h2>Ты с нами?</h2>
+                <p  class="white-bg" style="font-size: 26px; margin-top: 100px; padding: 8px 0 15px;"><a style="color: black;"href="https://forms.gle/Xw8TFm2YRTUVjrRD7" target="_blank">форма регистрации</a></p>
+                <p  style="font-size: 22px;  padding-top: 125px;">Предварительный онлайн звонок - твоя возможность лично услышать и себя, и ведущую, и понять, хочешь ты принимать участие. </p>
+            </div>
+        </div>                
+    </div>
+</body>
+</html>
